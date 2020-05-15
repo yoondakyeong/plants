@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>나만의식물</title>
+
+	<meta name="description" content="나만의 식물 키우기">
+	
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="make plants">
+	<meta property="og:description" content="나만의 식물 키우기">
+
+<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+	<!--명조 -->
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+	<!--고딕 -->
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		*{
+			margin:0;
+			scroll-behavior: smooth;
+		}
+		#allbox{
+			width: 1200px;
+			text-align: center;
+			margin:auto;
+			font-family: 'Nanum Myeongjo', serif;
+			position: relative;
+			color: #ae9d71;
+		}
+
+		#mainn{
+			height: 1700px;
+			background: url(./img/mainimg.jpg);
+			background-size: cover;
+		}
+
+		.midimg{
+			background: #f1efea;
+			height: 1470px;
+			margin-bottom: 200px;
+		}
+
+		h1{
+			font-size: 150px;
+			margin: 0;
+			font-family: 'Nanum Gothic', sans-serif;
+			font-weight: 400;
+			text-align: left;
+			margin-bottom: 30px;
+			margin-left: 50px;
+		}
+
+		h2{
+			font-size: 50px;
+			margin: 0;
+			font-weight: 400;
+			text-align: left;
+			margin-bottom: 50px;
+			margin-left: 50px;
+		}
+
+		p{
+			font-size: 20px;
+			text-align: left;
+			line-height: 32px;
+		}
+
+/*01 패키지 구성*/
+		#sectionone{
+			height: 2550px;
+		}
+/*테이블야자 전체 섹션*/
+		#sectiontwo{
+			height: 2890px;
+			margin-top: 200px;
+		}
+
+/*개운죽 전체 섹션*/		
+		#sectionthree{
+			height: 2690px;
+			margin-top: 200px;
+		}
+
+
+		.buybuttext{
+			border: 1px solid #ae9d71;
+			text-decoration: none;
+			color: #ae9d71;
+			padding: 10px;
+			border-radius: 15px;
+			cursor: pointer;
+		}
+		.buybuttext:hover{
+		font-weight: bold;
+		background: #ae9d71;
+		color: #fff;
+	}
+
+		.sidestyle{
+			font-size: 50px;
+			font-weight: 100;
+		}
+
+	/*중간 글씨들 스타일 세로*/
+		.midleft{
+			position: absolute;
+			left: 0;
+			top: 0;
+			transform: translate(-28%,500%) 
+						rotate(90deg);
+		
+		}
+		.midright{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			transform: translate(25%,-400%)
+						rotate(90deg);
+		}
+	/*02,03스타일 세로*/
+	.sectionright{
+			position: absolute;
+			top: 0;
+			right: 0;
+			transform: translate(32%,450%) 
+						rotate(90deg);
+		}
+	.sectionleft{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			transform: translate(-24%,-800%)
+						rotate(90deg);
+		}
+
+	#nav{
+		font-family: 'Nanum Gothic', sans-serif;
+		font-size: 1em;
+		font-weight: bold;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 1000;
+		position: fixed;
+	}
+	#nav ul{
+		margin: 0;
+		padding:0;
+	}
+	#nav ul li{
+		list-style-type: none;
+		margin-bottom: 30px;
+		margin-left: 30px;
+		border-radius: 15px;
+
+	}
+	#nav ul li a{
+		display: block;
+		color: #ae9d71;
+		text-decoration: none;
+		padding:10px;
+	}
+
+	ul li:hover{
+		border: 1px solid #ae9d71;
+	}
+
+	</style>
+</head>
+<body>
+
+	<div id="nav">
+		<ul>
+			<li>
+				<a href="#sectionone">01</a>
+			</li>
+			<li>
+				<a href="#sectiontwo">02</a>
+			</li>
+			<li>
+				<a href="#sectionthree">03</a>
+			</li>
+			<li>
+				<a href="#sectionfour">04</a>
+			</li>
+		</ul>
+	</div>
+
+
+<div id="allbox">
+
+	<div id="mainn">
+		<div id="mainbox" style="padding-top: 195px;">
+			<h2 style="font-size: 45px; text-align: center; margin: 0;">
+				Change your room
+			</h2>
+			<h3 style="font-size: 70px; margin: 0; padding-top: 25px;">
+				나만의 식물키우기
+			</h3>
+		</div>>
+	</div>
+
+
+<!--잠깐의 휴식 -->
+	<div id="intro"style="height: 514px; position: relative;">
+		<div id="introbox" style="position: absolute;
+							transform: translate(-50%,-50%);
+							top: 50%; left: 50%;">
+			<h2 style="text-align: center;
+					margin-bottom: 25px;
+					margin: 0;">
+					잠깐의 휴식</h2>
+			<p style="text-align: center;">
+				카페에서 커피 한 잔의 여유를 즐기고 싶지 않으신가요?<br>
+				수경식물은 작은 부피로도 내 방을 카페처럼<br>
+				인테리어 효과를 만들어 줍니다.<br>
+				관리하기 쉬워 초보자도 쉽게 키울 수 있습니다.<br>
+				저렴한 가격으로 나만의 휴식공간을 만들어 보세요.<br>
+			</p>
+		</div>
+	</div>
+
+<!--중간 이미지 Your rest with plants/ Simple interior-->
+	<div class="midimg" style="position: relative;">
+		<img src="./img/midimg.jpg"
+			style="height: 80%; position: absolute; transform: translate(-50%,-50%); top: 50%;">
+		<div class="sidestyle midleft">
+			Your rest with plants
+		</div>
+
+		<div class="sidestyle midright">
+			Simple interior
+		</div>
+	</div>
+
+
+<!--01 패키지구성 -->
+	<div id="sectionone" style="position: relative;">
+		<h1>01</h1>
+		<h2>패키지구성</h2>
+		<p style="text-align: left;margin-bottom: 50px; margin-left: 50px;">
+				수경식물, 유리병, 자갈, 노끈, 설명서, 노트</p>
+
+			<div id="packone" style="height: 680px;
+				width: 1000px; background: gray;
+				position: absolute; right: 0;">
+					<img src="./img/oneoneimg.jpg" style="height: 100%; width: 100%;">
+			</div>
+
+			<div id="packtwo" style="height: 450px;
+				width: 660px; background: gray;
+				position: absolute; left: 0; top: 45%;">
+				 	<img src="./img/onetwoimg.jpg" style="height: 100%; width: 100%;">
+			</div>
+
+			<div id="packtext"
+				 style="position: absolute; right: 0; top:55%;
+				 		font-size: 0.9em;">
+					*이 제품은 흙 제거 된 상태로 배송이 됩니다.
+				</div>
+			<div id="packthree" style="height: 250px;
+				width: 360px; background: gray;
+				position: absolute; right: 0; top: 56%;" >
+					<img src="./img/onethreeimg.jpg" style="height: 100%; width: 100%;">
+				
+			</div>
+
+			<div id="packfull" style="height: 800px;
+				background: gray; position: absolute;
+				left: 0; width: 100%; bottom:0%;">
+					<img src="./img/onelastimg.jpg" style="height: 100%; width: 100%;">
+			</div>
+	</div>
+
+
+
+<!--02 테이블야자 -->
+	<div id="sectiontwo" style="position: relative;">
+		<div class="sidestyle sectionright">
+			Make your room a cafe
+		</div>
+
+		<h1>02</h1>
+		<h2>테이블야자</h2>
+
+		<div id="sectwoimgfull" style="height: 1800px; width: 100%;
+			">
+			<img src="./img/twomain.jpg" style="height: 100%; width: 100%;">
+		</div>
+
+		<p style="position: absolute;transform: translate(-50%,-50%); 
+				top:18%; left: 40%; ">
+			높은 인테리어 효과로 많은 사랑은 받는 테이블야자.<br>
+			테이블야자는 NASA에서 선정한 공기정화 식물로<br>
+			미세먼지 제거, 전자파 차단, 실내공기 정화 효능을 가지고 있습니다.<br>
+				<br>
+			공중에 떠다니는 벤젠, 포름알데히드, 암모니아, 유독가스 등<br>
+			냄세 제거에 탁월합니다. 보통 화장실, 신발장에 키우지만<br>
+			이름이 테이블인 것처럼 테이블 위에 놓고 많이 사용합니다.
+		</p>
+	<!--테이블야자 사진 -->
+		<div id="sectwoimgone" style="height: 730px; width: 490px; 
+			background: gray; bottom: 0; right: 0; position: absolute; ">
+			<img src="./img/twotwo.jpg" style="height: 100%; width: 100%;">
+		</div>
+
+		<div id="sectwoimgtwo" style="height: 390px; width: 650px;
+			 bottom: 0; left: 0; position: absolute;">
+			<img src="./img/twoone.jpg" style="height: 100%; width: 100%;">
+		</div>
+
+		<p style="position: absolute; transform: translate(0%,-50%);
+				bottom: 16%; left: 50px;">
+			실내면 어디든 잘 자라는 테이블야자,<br>
+			반음지 식물로 어두운 곳에서도 잘 자랍니다.<br>
+			직사광선은 피하고 대부분은 실내에서 키웁니다.<br>
+			어느 공간이든 쉽게 키울 수 있는 장점을 가지고 있어<br>
+			인기 있는 식물 중 하나입니다.<br>
+				<br>
+			키우기 쉬워 초보자들이 많이 찾는 식물이고<br>
+			작은 부피로 인테리어 효과가 높아 선물용으로도 인기가 많습니다.
+		</p>
+	<!--테이블야자 사진 -->
+		<div class="buybutt" style="position: absolute; 
+							transform: translate(0%,-50%);
+							bottom:18%; left: 50px;">
+			<a class="buybuttext">
+				구매하러가기
+			</a>
+		</div>
+
+	</div>
+
+
+<!--03 개운죽 -->
+	<div id="sectionthree" style="position: relative;">
+
+		<div class="sidestyle sectionright">
+			Recommend to you
+		</div>
+		<div class="sidestyle sectionleft" style="bottom: 25%; 
+							transform: translate(-24%,50%) rotate(90deg);">
+			Makes good luck
+		</div>
+
+		<h1>03</h1>
+		<h2>개운죽</h2>
+	<!--개운죽 사진 -->
+		<div id="secthreeimgfull" style="height: 1700px; width: 100%;
+			 position: absolute; z-index: -5;">
+			<img src="./img/threemain.jpg" style="height: 100%; width: 100%;">
+		</div>
+
+		<div id="secthreeimgone" style="height: 580px; width: 380px;
+			 position: absolute; bottom: 0; z-index: -5;">
+			<img src="./img/threeone.jpg" style="height: 100%; width: 100%;">
+		</div>
+
+		<div id="secthreeimgtwo" style="height: 580px; width: 760px;
+			 position: absolute; bottom: 0; right: 0; z-index: -5;">
+			<img src="./img/threetwo.jpg" style="height: 100%; width: 100%;">
+		</div>
+
+		<p style="position: absolute; transform: translate(30%,-50%);
+				  top:19%;">
+			영어 이름은 럭키 밤부(lucky bamboo), 행운의 대나무입니다.<br>
+			늘 푸른 잎을 유지하고 있어 ‘만년청’이라 불립니다.<br>
+			수경재배 대표적인 식물입니다.<br>
+			<br>
+			개운죽은 행운을 부르는 식물이라는 의미로<br>
+			집들이 선물, 취임선물, 개업선물 등 선물용으로도 인기가 많은 식물입니다.<br>
+			물만 있으면 스스로 잘 자라는 식물이여서 누구나 쉽게 키울 수 있습니다.<br>
+			공기정화와 천연 가습기가 되고 실내 습도를 조절해 줍니다.<br>
+		</p>
+
+		<p style="position: absolute; transform: translate(-60%,-50%);
+				  top:39%; right: 0;">
+			키우기가 너무 쉬운 식물이라<br>
+			첫 시작으로 키워보기 좋은 식물로<br>
+			초보자들이 많이 찾습니다.<br>
+			<br>
+			행운을 부르는 개운죽,<br>
+			식물 키우보는 건 어떠한가요?<br>
+		</p>
+
+		<div class="buybutt" style="position: absolute; 
+							transform: translate(-50%,-50%);
+							top: 45%; right: 24%;">
+			<a class="buybuttext">
+				구매하러가기
+			</a>
+		</div>
+	</div>
+
+
+
+<!--중간 이미지 Can have your plant-->
+	<div class="midimg" style="position: relative; margin-top: 200px;">
+		<img src="./img/midallimg.jpg"
+			style="height: 80%; position: absolute; transform: translate(-50%,-50%); top: 50%;">
+		<div class="sidestyle midright">
+			Can have your plant
+		</div>
+	</div>
+
+
+
+<!--04 개운죽 -->
+	<div id="sectionfour">
+
+		<h1>04</h1>
+		<h2>DIY과정</h2>
+
+	<!--과정 설명-->	
+		<style type="text/css">
+			#diybigone{
+				display: flex;
+				justify-content: center;
+			}
+			#diybigtwo{
+				display: flex;
+				justify-content: center;
+			}
+
+			#cir{
+				width: 137px;
+				height: 137px;
+				background: gray;
+				border-radius: 50%;
+				margin: auto;			
+			}
+
+			.diysq{
+			height: 331px;
+			width: 331px;
+			background: gray;
+			margin: auto;
+			margin-bottom: 25px;
+			position: relative;
+			}	
+
+			.diyboxes{
+				padding-right: 15px;
+				line-height: 23px;
+				word-spacing: -1px;
+				    line-height: 26px;
+			}
+			.diyboxbo{
+				padding-bottom: 40px;
+				    line-height: 26px;
+			}
+			.diyimgbox{
+				height: 100%;
+				width:100%;
+			}
+		</style>
+
+		<div id="diycontain">
+
+			<div id="diybigone">
+					<div class="diyboxes diyboxbo">
+						<div class="diysq">
+							<img src="./img/diyone.jpg" class="diyimgbox">
+						</div>
+						식물, 유리병, 자갈<br>
+						한 번 세척해 줍니다.
+					</div>
+
+					<div class="diyboxes diyboxbo">
+						<div class="diysq">
+							<img src="./img/diytwo.jpg" class="diyimgbox">
+						</div>
+						자갈을 조금 남겨두고<br>
+						유리병 안에 자갈을 넣어줍니다.
+					</div>
+
+					<div class="diyboxbo">
+						<div class="diysq">
+							<img src="./img/diythree.jpg" class="diyimgbox">
+						</div>
+						시든 잎이 보이면 정리해주고<br>
+						식물을 유리병 안에 넣어줍니다.
+					</div>
+
+				</div>
+
+			<div id="diybigtwo">
+					<div class="diyboxes diyboxbo">
+						<div class="diysq">
+							<img src="./img/diytfour.jpg" class="diyimgbox">
+						</div>
+						조금 남겨 둔 자갈을<br>
+						이용해 식물 위치를 잡아줍니다.
+					</div>
+
+					<div class="diyboxes diyboxbo">
+						<div class="diysq">
+							<img src="./img/diytfif.jpg" class="diyimgbox">
+						</div>
+						뿌리만 살짝 잠기도록<br>
+						물을 채워줍니다.
+					</div>
+
+					<div class="diyboxbo">
+						<div class="diysq">
+							<img src="./img/diysix.jpg" class="diyimgbox">
+						</div>
+						노끈으로 묶어주면<br>
+						나만의 식물 완성.
+					</div>
+				</div>
+
+			
+		</div>
+
+<!--tip -->
+		<div id="diycontaintwo" style=" margin-top: 200px;">
+			<h3>***Tip***</h3>
+			<p style="text-align: center; line-height: 46px;">
+				1. 수경재배 시작한 후 1주일 정도 물을 매일 갈아줍니다.<br>
+
+				2. 수돗물을 사용한다면 하루전에 미리 받아둬서 사용합니다.<br>
+
+				3. 잎이 마르지 않도록 잎 주위에 분무기를 뿌립니다.<br>
+
+				4. 햇빛을 많이 보면 물에 녹색이끼가 생길 수 있습니다.<br>
+
+				5. 물에서는 영양소가 부족하기 때문에 한달에 한두번 액상영양제 1~2방울 넣어주면 좋습니다.<br>
+
+				6. 만약 화분으로 키우고 싶으신 분은 분갈이 흙을 사서 심어주면 됩니다.<br>
+			</p>
+
+			<div id="cir" style="margin-top: 130px;background: url(./img/diylast.jpg);
+								background-size: cover;">
+			</div>
+		</div>
+
+<!--구매유의사항-->
+		<div id="bottombox" 
+			style="text-align: left; height: 350px; background-color: #f8f7f4;
+					margin-top: 200px; position: relative;">
+
+				<div class="bottomboxtwo" style=" position: absolute;
+    				transform: translate(10%, -50%); top:50%;">	
+
+					<h3 style="font-weight: 900;">구매 유의사항</h3>
+					<p id="bottomone"
+						style="font-size: 18px; ">
+						1. 식물은 특성상 단순변심에 의한 교환&환불이 불가능합니다.<br>
+						2. 배송 등의 문제로 상품에 이상이 있을 경우 사진과 함께 문의 주시면 환불 및 재발송 해드립니다.<br>
+						3. 식물은 색깔, 모양, 크기, 등이 조금씩 다를 수 있습니다.<br>
+						4. 유리병에 기포, 약간의 스크래치 등이 있을 수 있습니다.<br>
+
+					</p>
+				</div>
+
+		</div>
+
+
+
+	</div>
+
+
+</div>
+
+</body>
+</html>
